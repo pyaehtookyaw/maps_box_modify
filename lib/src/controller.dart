@@ -913,7 +913,7 @@ class MapboxMapController extends ChangeNotifier {
         Circle(getRandomString(),
             CircleOptions.defaultOptions.copyWith(options[i]), data?[i])
     ];
-    await circleManager!.addAll(cricles);
+    await circleManager?.addAll(cricles);
 
     notifyListeners();
     return cricles;
@@ -972,7 +972,7 @@ class MapboxMapController extends ChangeNotifier {
   ///
   /// The returned [Future] completes once listeners have been notified.
   Future<void> clearCircles() async {
-    circleManager!.clear();
+    circleManager?.clear();
 
     notifyListeners();
   }
