@@ -277,10 +277,10 @@ class _MapboxMapState extends State<MapboxMap> {
   @override
   void dispose() async {
     super.dispose();
-    if (_controller.isCompleted) {
-      final controller = await _controller.future;
-      controller.dispose();
-    }
+    // if (_controller.isCompleted) {
+    //   final controller = await _controller.future;
+    //   controller.dispose();
+    // }
   }
 
   @override
