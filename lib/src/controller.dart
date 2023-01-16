@@ -1343,9 +1343,9 @@ class MapboxMapController extends ChangeNotifier {
     return _mapboxGlPlatform.takeSnapshot(snapshotOptions);
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-    _mapboxGlPlatform.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   super.dispose();
+  //   _mapboxGlPlatform.dispose();
+  // }
 }
